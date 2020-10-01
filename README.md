@@ -3,13 +3,13 @@
 
 <img src="https://raw.githubusercontent.com/AndreiD/SlackUptimeMonitor/master/slackmonitor.JPG" alt="slack website up down notifier uptime ping"/>
 
-#### A simple, one file script that notifies you on slack when your website is down.
+#### A simple, one file script that notifies you on slack when your website is down
 
-## Configuration
+## Configurations
 
 ### Step 1 - Get the script
 
-Simply copy paste the script uptimemonitor.py into your server. After you test it add it to cron with your preferred check interval
+Simply copy paste the script uptimemonitor.py into your server. After you test it, add it to cron with your preferred check interval
 
 Example for checks every minute
 ~~~~
@@ -19,7 +19,7 @@ $service cron restart
 $tail -f /root/uptimenotifier.log
 ~~~~
 
-Note that the script is written in Python3.5.
+Note that the script is written in Python3.5
 
 ### Step 2 -  Setup the config variables
 
@@ -38,7 +38,7 @@ export SLACK_TOKEN = 'your_token_here'
 
 SLACK_TOKEN = os.environ.get('SLACK_TOKEN')
 
-#### Where you want to receive your notifications ?
+#### Where you want to receive your notifications?
 
 you can get it using list_channels and channel_info or click on the channel name
 
